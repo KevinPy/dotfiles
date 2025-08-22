@@ -1,0 +1,22 @@
+[user]
+  name = Kevin Py
+  email = ***
+	signingkey = ***GPG_KEY***
+[credential]
+	helper = osxkeychain
+[init]
+	defaultBranch = main
+[alias]
+  co = checkout
+  cob = checkout -b
+  st = status --short -uno
+  aa = add -A .
+  wip = commit -am "WIP"
+  unstage = reset --soft HEAD^
+  undo = reset HEAD~1
+  am = !git add . && commit --amend --no-edit
+  yolo = !git add . && git commit --amend --no-edit && git push -f --no-verify
+[push]
+	autoSetupRemote = true
+[commit]
+	gpgsign = true

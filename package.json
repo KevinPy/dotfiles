@@ -1,0 +1,8 @@
+{
+  "name": "dotfiles",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build:vs-code-extensions": "node scripts/build-vs-code-extensions.js"
+  }
+}
